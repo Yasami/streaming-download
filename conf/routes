@@ -1,0 +1,4 @@
+GET        /                            controllers.Assets.at(path="/public", file: String ?= "index.html")
+GET        /download                    controllers.DownloadController.index(from: Int, to: Int)
+GET        /random                      controllers.DownloadController.random(length: Int)
+GET        /*file                       controllers.Assets.at(path="/public", file)
